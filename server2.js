@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+//SIMPLE MIDDLEWARE
 const myLogger = function (req, res, next) {
   console.log('LOGGED');
   next();
